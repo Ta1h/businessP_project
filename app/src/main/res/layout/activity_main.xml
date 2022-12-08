@@ -12,11 +12,9 @@
         android:id="@+id/sanjoseseal"
         android:layout_width="320dp"
         android:layout_height="251dp"
-        android:layout_marginStart="42dp"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="40dp"
-        android:background="@drawable/sanjose"
-        android:layout_centerHorizontal="true"
-        android:foregroundGravity="center"/>
+        android:background="@drawable/sanjose" />
 
     <TextView
         android:layout_width="167dp"
@@ -44,12 +42,12 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="207dp"
-        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginLeft="14dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="14dp"
         android:layout_marginTop="359dp"
-        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
         android:text="On September 10, 2000, San Jose del Monte was proclaimed as a Component City under Republic Act No. 8797. It became the first city in the province of Bulacán and was recorded as the 86th chartered city of the Philippines."
         android:textAlignment="center"
         android:textSize="20sp" />

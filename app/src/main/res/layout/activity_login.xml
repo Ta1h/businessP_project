@@ -11,22 +11,21 @@
         android:id="@+id/sanjoseseal"
         android:layout_width="330dp"
         android:layout_height="261dp"
-        android:layout_marginLeft="39dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="147dp"
-        android:background="@drawable/sanjose"
-        android:foregroundGravity="center"/>
+        android:background="@drawable/sanjose"/>
 
     <TextView
         android:id="@+id/business_p"
         android:layout_width="201dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="117dp"
+        android:layout_marginStart="105dp"
         android:layout_marginTop="130dp"
         android:gravity="top"
         android:shadowColor="#353030"
         android:text="BUSINESS - P"
         android:textColor="#704747"
-        android:textSize="32dp"
+        android:textSize="32sp"
         android:textStyle="bold" />
 
 
@@ -34,12 +33,12 @@
         android:id="@+id/login"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp"
         android:layout_marginTop="611dp"
         android:backgroundTint="#DF7974"
         android:layout_centerHorizontal="true"
         android:text="LOGIN"
-        android:textSize="20dp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/Email"
