@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".MainActivity">
+
+
+    <View
+        android:id="@+id/sanjoseseal"
+        android:layout_width="320dp"
+        android:layout_height="251dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/sanjose"
+        android:layout_centerHorizontal="true"
+        android:foregroundGravity="center"/>
+
+    <TextView
+        android:layout_width="167dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="120dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:text="WELCOME TO"
+        android:textColor="#353030"
+        android:textSize="23dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:shadowColor="#353030"
+        android:text="BUSINESS-P"
+        android:textColor="#353030"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="207dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="359dp"
+        android:layout_marginRight="15dp"
+        android:text="On September 10, 2000, San Jose del Monte was proclaimed as a Component City under Republic Act No. 8797. It became the first city in the province of Bulacán and was recorded as the 86th chartered city of the Philippines."
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="580dp"
+            android:backgroundTint="#DF7974"
+            android:text="SIGN UP"
+            android:textColor="#DFDADE" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="580dp"
+            android:backgroundTint="#DFDADE"
+            android:text="SIGN IN"
+            android:textColor="#DF7974" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/catt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="510dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#DF7974"
+        android:backgroundTint="#DFDADE"
+        android:text="SIGN IN" />
+
+
+</RelativeLayout>
