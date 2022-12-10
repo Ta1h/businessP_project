@@ -38,10 +38,11 @@
         android:backgroundTint="#DF7974"
         android:layout_centerHorizontal="true"
         android:text="LOGIN"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:onClick="btnLogin"/>
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/etEmail"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
@@ -58,7 +59,7 @@
         android:textSize="20sp" />
 
     <EditText
-        android:id="@+id/Password"
+        android:id="@+id/etPassword"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_marginStart="10dp"

@@ -7,10 +7,6 @@
     android:background="@drawable/back"
     tools:context=".signup">
 
-
-
-
-
     <TextView
         android:layout_width="201dp"
         android:layout_height="wrap_content"
@@ -24,7 +20,7 @@
         android:textAlignment="center"/>
 
     <EditText
-        android:id="@+id/Fullname"
+        android:id="@+id/etUsername"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_centerHorizontal="true"
@@ -32,7 +28,7 @@
         android:layout_marginTop="230dp"
         android:background="@drawable/shapefortextbox"
         android:drawablePadding="20dp"
-        android:hint="Email"
+        android:hint="Username"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -46,12 +42,12 @@
         android:background="@drawable/shapefortextbox"
         android:drawablePadding="20dp"
         android:layout_centerHorizontal="true"
-        android:hint="Username"
+        android:hint="Email"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="18sp"
-        android:id="@+id/Email"
+        android:id="@+id/etEmail"
         />
 
     <EditText
@@ -69,7 +65,7 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="18sp"
-        android:id="@+id/Password"
+        android:id="@+id/etPassword"
         />
 
     <EditText
@@ -87,11 +83,12 @@
         android:textColor="@color/white"
         android:textColorHint="@color/white"
         android:textSize="18sp"
-        android:id="@+id/ConfirmPassword"
+        android:id="@+id/etConfirmPassword"
         />
 
         <Button
-                android:id="@+id/GetStart"
+            android:id="@+id/btnSignup"
+            android:onClick="btnSignup"
             android:layout_width="150dp"
             android:layout_height="60dp"
             android:layout_marginLeft="59dp"
@@ -99,7 +96,7 @@
             android:layout_marginRight="61dp"
             android:layout_marginBottom="54dp"
             android:layout_centerHorizontal="true"
-                android:backgroundTint="#DF7974"
+            android:backgroundTint="#DF7974"
             android:text="SIGN UP"/>
 
 </RelativeLayout>
