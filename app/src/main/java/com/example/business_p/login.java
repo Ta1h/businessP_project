@@ -80,7 +80,7 @@ public class login extends AppCompatActivity {
             requestQueue.add(stringRequest);
 
         } else if (email.equals("") && password.equals("")){
-            Toast.makeText(this, "login failed", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Login failed", Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this, "Fields can not be empty", Toast.LENGTH_SHORT).show();
         }
