@@ -104,5 +104,18 @@
         android:text="newsfeed"
         tools:ignore="InOrMmUsage" />
 
+    <Button
+        android:id="@+id/profile"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1.4in"
+        android:layout_marginTop="650dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="#DF7974"
+        android:backgroundTint="#DFDADE"
+        android:text="profile"
+        tools:ignore="InOrMmUsage" />
+
 
 </RelativeLayout>
