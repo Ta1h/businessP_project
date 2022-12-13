@@ -38,6 +38,7 @@
         android:backgroundTint="#DF7974"
         android:layout_centerHorizontal="true"
         android:text="LOGIN"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:onClick="btnLogin"/>
 

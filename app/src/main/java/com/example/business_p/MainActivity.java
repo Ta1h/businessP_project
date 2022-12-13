@@ -9,42 +9,43 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button signup,login, catt;
+    Button signup,login, catt, newsFeed;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        signup = (Button) findViewById(R.id.signup);
-        login = (Button) findViewById(R.id.login);
-        catt = (Button) findViewById(R.id.catt);
+        signup = findViewById(R.id.signup);
+        login = findViewById(R.id.login);
+        catt = findViewById(R.id.catt);
+        newsFeed = findViewById(R.id.newsFeed);
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent= new Intent(MainActivity.this,signup.class);
-                startActivity(intent);
-            }
+        signup.setOnClickListener(view -> {
+            Intent intent= new Intent(MainActivity.this,signup.class);
+            startActivity(intent);
+            finish();
         });
 
-        login.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,login.class);
-                startActivity(intent);
-            }
+        login.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,login.class);
+            startActivity(intent);
+            finish();
         });
 
-        catt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,category.class);
-                startActivity(intent);
-
-
-            }
+        catt.setOnClickListener(view -> {
+            Intent intent = new Intent(MainActivity.this,category.class);
+            startActivity(intent);
+            finish();
         });
+
+        newsFeed.setOnClickListener(view -> {
+            Intent intent = new Intent(this, Newsfeed.class);
+            startActivity(intent);
+            finish();
+        });
+
+
 
     }
 }
