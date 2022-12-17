@@ -28,14 +28,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@drawable/back_icon"
-                    android:onClick="back" />
+                    android:onClick="backMsg" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="-5dp"
                     android:layout_marginTop="4dp"
-                    android:onClick="home"
+                    android:onClick="backMsg"
                     android:text="Back"
                     android:textColor="#A18E8E"
                     android:textSize="20sp" />
@@ -65,36 +65,50 @@
 
                 <LinearLayout
                     android:layout_width="2.45in"
-                    android:layout_height="60dp"
-                    android:orientation="horizontal">
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="55dp"
-                        android:layout_height="55dp"
-                        android:background="@drawable/account_icon"
-                        android:layout_marginStart="20dp"/>
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="2.45in"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:backgroundTint="#3e3737"
+                        android:onClick="message_pop">
+                        <LinearLayout
+                            android:layout_width="2.45in"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal">
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:text="test_name"
-                            android:textSize="20sp"
-                            android:textColor="#A18E8E"/>
+                            <TextView
+                                android:layout_width="55dp"
+                                android:layout_height="55dp"
+                                android:background="@drawable/account_icon"
+                                android:layout_marginStart="20dp"/>
 
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:text="hi"
-                            android:textSize="20sp"
-                            android:textColor="#A18E8E"/>
-                    </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:text="test_name"
+                                    android:textSize="20sp"
+                                    android:textColor="#A18E8E"/>
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="20dp"
+                                    android:text="hi"
+                                    android:textSize="20sp"
+                                    android:textColor="#A18E8E"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
                 </LinearLayout>
 
 

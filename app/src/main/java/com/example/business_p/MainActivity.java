@@ -40,4 +40,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    public void btnMsg(View view) {
+        startActivity(new Intent(this, msg_system.class));
+    }
 }
