@@ -14,19 +14,9 @@ public class Newsfeed extends AppCompatActivity {
         setContentView(R.layout.activity_newsfeed);
     }
 
-    public void menu(View view) {
-        Intent intent = new Intent(this, login.class);
-        startActivity(intent);
-        finish();
-    }
-
     public void profile(View view) {
         startActivity(new Intent(this, profile.class));
         finish();
     }
 
-    public void categories(View view) {
-        startActivity(new Intent(this, category.class));
-        finish();
-    }
 }

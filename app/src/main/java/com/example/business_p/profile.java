@@ -22,13 +22,7 @@ public class profile extends AppCompatActivity {
         startActivity(new Intent(this, Newsfeed.class));
     }
 
-    public void logout(View view) {
-        startActivity(new Intent(this, login.class));
-    }
 
-    public void login(View view) {
-        startActivity(new Intent(this, login.class));
-    }
 
 
 }
