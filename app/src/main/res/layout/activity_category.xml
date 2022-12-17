@@ -6,31 +6,47 @@
     android:layout_height="match_parent"
     android:background="#DBD5DA"
     tools:context=".category">
-    
-    <TextView
-        android:fontFamily="sans-serif-condensed-medium"
-        android:id="@+id/categories"
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:paddingTop="10dp"
-        android:layout_centerHorizontal="true"
-        android:text="CATEGORIES"
-        android:textColor="@color/black"
-        android:textStyle="bold"
-        android:textSize="32sp"/>
+        android:id="@+id/header"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
-    <ImageView
-        android:layout_width="53dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="304dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/arrowback33" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="back"
+            android:background="@drawable/back_icon"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="-5dp"
+            android:text="Newsfeed"
+            android:onClick="home"
+            android:textSize="20sp"
+            android:textColor="#A18E8E"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="20dp"
+            android:text="Categories"
+            android:textStyle="bold"
+            android:textSize="23sp"
+            android:textColor="#A18E8E"/>
+
+    </LinearLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/categories"
+        android:layout_below="@+id/header"
         android:layout_marginStart="18dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="18dp"
@@ -68,8 +84,7 @@
                     android:layout_height="wrap_content"
                     android:text="Gift"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -106,8 +121,7 @@
                     android:layout_height="wrap_content"
                     android:text="Food"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -144,8 +158,7 @@
                     android:layout_height="wrap_content"
                     android:text="Medical"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -182,8 +195,7 @@
                     android:layout_height="wrap_content"
                     android:text="Hotel"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -220,8 +232,7 @@
                     android:layout_height="wrap_content"
                     android:text="Bank"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -258,8 +269,7 @@
                     android:layout_height="wrap_content"
                     android:text="School"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -296,8 +306,7 @@
                     android:layout_height="wrap_content"
                     android:text="Church"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
+                    android:textSize="25sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
@@ -334,8 +343,7 @@
                     android:layout_height="wrap_content"
                     android:text="Transportation"
                     android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
+                    android:textSize="20sp"/>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 

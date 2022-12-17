@@ -19,4 +19,14 @@ public class Newsfeed extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
+    public void profile(View view) {
+        startActivity(new Intent(this, profile.class));
+        finish();
+    }
+
+    public void categories(View view) {
+        startActivity(new Intent(this, category.class));
+        finish();
+    }
 }

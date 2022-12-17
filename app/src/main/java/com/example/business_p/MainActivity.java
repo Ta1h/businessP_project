@@ -9,7 +9,7 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button signup,login, catt, newsFeed,profile;
+    Button signup,login, catt;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,8 +19,6 @@ public class MainActivity extends AppCompatActivity {
         signup = findViewById(R.id.signup);
         login = findViewById(R.id.login);
         catt = findViewById(R.id.catt);
-        newsFeed = findViewById(R.id.newsFeed);
-        profile = findViewById(R.id.profile);
 
         signup.setOnClickListener(view -> {
             Intent intent= new Intent(MainActivity.this,signup.class);
@@ -39,19 +37,6 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
             finish();
         });
-
-        newsFeed.setOnClickListener(view -> {
-            Intent intent = new Intent(this, Newsfeed.class);
-            startActivity(intent);
-            finish();
-        });
-
-        profile.setOnClickListener(view -> {
-            Intent intent = new Intent(this, profile.class);
-            startActivity(intent);
-            finish();
-        });
-
 
 
     }
