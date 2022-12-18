@@ -15,6 +15,6 @@ public class chat extends AppCompatActivity {
     }
 
     public void backChat(View view) {
-        startActivity(new Intent(this, msg_system.class));
+        startActivity(new Intent(this, Newsfeed.class));
     }
 }

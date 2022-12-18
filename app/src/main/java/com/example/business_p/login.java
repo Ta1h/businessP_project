@@ -44,4 +44,8 @@ public class login extends AppCompatActivity {
 
 
     }
+
+    public void backSignup(View view) {
+        startActivity(new Intent(this, signup.class));
+    }
 }

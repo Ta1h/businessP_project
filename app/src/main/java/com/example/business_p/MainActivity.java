@@ -18,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
         signup = findViewById(R.id.signup);
         login = findViewById(R.id.login);
-        catt = findViewById(R.id.catt);
 
         signup.setOnClickListener(view -> {
             Intent intent= new Intent(MainActivity.this,signup.class);
@@ -32,16 +31,5 @@ public class MainActivity extends AppCompatActivity {
             finish();
         });
 
-        catt.setOnClickListener(view -> {
-            Intent intent = new Intent(MainActivity.this,category.class);
-            startActivity(intent);
-            finish();
-        });
-
-
-    }
-
-    public void btnMsg(View view) {
-        startActivity(new Intent(this, msg_system.class));
     }
 }
