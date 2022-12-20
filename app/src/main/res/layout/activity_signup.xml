@@ -101,4 +101,18 @@
             android:textColor="@color/white"
             android:text="SIGN UP"/>
 
+    <TextView
+        android:layout_width="201dp"
+        android:layout_height="21dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4.2in"
+        android:layout_marginStart="96dp"
+        android:layout_marginEnd="96dp"
+        android:gravity="center"
+        android:onClick="backToLogin"
+        android:text="Already have an account?"
+        android:textSize="15sp"
+        tools:ignore="HardcodedText,InOrMmUsage" />
+
 </RelativeLayout>

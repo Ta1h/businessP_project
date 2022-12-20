@@ -56,4 +56,8 @@ public class signup extends AppCompatActivity {
         }
 
     }
+
+    public void backToLogin(View view) {
+        startActivity(new Intent(this, login.class));
+    }
 }
